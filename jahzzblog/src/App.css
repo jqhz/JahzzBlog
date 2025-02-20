@@ -1,0 +1,52 @@
+/* Ensure the whole page fills the viewport */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Container with a static background image */
+.app {
+  background-image: url('images/bg.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #fff; /* Adjust text color based on your background */
+}
+
+/* Centered header styling */
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* Centered content for the image */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  padding-top: 20px;
+
+  /*height: calc(100vh - 100px);  Adjust if header height changes */
+}
+
+.pfp {
+  max-width: 100%;
+  height: auto;
+}
+
+.break {
+  width:80%;
+  margin: 3px;
+  background-color: rgb(202, 0, 0);
+  border:none;
+  border-top: 2px solid #0a0101;
+  opacity: 1;
+}
